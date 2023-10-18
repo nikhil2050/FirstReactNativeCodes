@@ -6,7 +6,9 @@ import Ex04_ScrollViewComponent from "./components/Ex04_ScrollViewComponent";
 import Ex05_ButtonComponent from "./components/Ex05_ButtonComponent";
 import Ex06_PressableComponent from "./components/Ex06_PressableComponent";
 import Ex07_ModalComponent from "./components/Ex07_ModalComponent";
+import Mainscreen from "./components/jobmatching/Mainscreen";
+// import Mainscreen from "./components/jobmatching/mainscreen";
 
 export default function App() {
-  return <Ex07_ModalComponent />;
+  return <Mainscreen  />;
 }
