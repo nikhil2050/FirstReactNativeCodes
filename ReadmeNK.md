@@ -66,14 +66,14 @@ HelloWorld
 ```
 	
 ## CORE COMPONENTS :
-	In Android and iOS development, we employ a fundamental building block called a "view" for UI
-	A view is a small rectangular element on the screen that can display text, images, or respond to user input
-	Android - views are written in Kotlin or Java
-	iOS - views are written in Swift or Objective-C
-	React Native - views using JavaScript through React components
-	At runtime, React Native generates the corresponding Android and iOS views for these components.
+* In Android and iOS development, we employ a fundamental building block called a "view" for UI
+* A view is a small rectangular element on the screen that can display text, images, or respond to user input
+	* Android - views are written in Kotlin or Java
+	* iOS - views are written in Swift or Objective-C
+	* React Native - views using JavaScript through React components
+* At runtime, React Native generates the corresponding Android and iOS views for these components.
 
-	React Native offers a collection of essential pre-built components known as "Core components," which are readily available for building your native app's UI.
+* React Native offers a collection of essential pre-built components known as "Core components," which are readily available for building your native app's UI.
 
 | REACT NATIVE UI COMPONENT	| ANDROID VIEW	| IOS VIEW	| WEB ANALOG |
 | --- | --- | --- | --- |
@@ -83,13 +83,13 @@ HelloWorld
 | \<ScrollView> | \<ScrollView>| \<UIScrollView>| \<div> |
 | \<TextInput>	| \<EditText>  | \<UITextField>	| \<input type="text"> |
 
-**\<View> Component:**	
-* The View component is a fundamental core component in React Native that serves as a building block for creating UI.
+**1. \<View> Component:**	
+* It is a fundamental core component in React Native that serves as a building block for creating UI.
 * It functions as a container that supports layout using flexbox, styling, touch handling and accessibility controls.
 * In Web development terms, the View component can be compares to the \<div>.
 * The View component is typically nested inside other views and can have 0 or more children of any type.
 
-**\<Text> Component:**
+**2. \<Text> Component:**
 * Component for displaying text.
 * It supports nesting, styling and touch-handling.
 * Depending on target platform, ReactNative will translate \<Text> to:
@@ -97,7 +97,7 @@ HelloWorld
 	* \<UITextView>(for iOS) 
 	* 'p'(Web).
 	
-**\<Image> Component:**
+**3. \<Image> Component:**
 * It enables us to display various types of images, including:
 	* Static images
 	* Network images
@@ -108,26 +108,32 @@ HelloWorld
 	* UIImageView for iOS
 	* 'img' for the Web
 	
-**\<ScrollView> Component:**
+**4. \<ScrollView> Component:**
 * It wraps the platform-specific scrolling functionality.
 * It requires bounded height to function properly.
 ```
 	<Image style={{width:300, height:300}} source={logoImg}></Image>
 	<Image style={{width:150, height:150}} source={{uri:"https://picsum.photos/300"}}></Image>
 ```
-	
-**\<Button> Component:**
-	It allows user to trigger actions
-		<Button title="Press" onPress={ ()=>{console.log("Button pressed")} } color='green' />
 
-**\<Pressable> Component:**
+**5. \<TextInput> Component:** 
+
+Coming soon.. 
+
+**6. \<Button> Component:**
+* It allows user to trigger actions
+```
+	<Button title="Press" onPress={ ()=>{console.log("Button pressed")} } color='green' />
+```
+
+**7. \<Pressable> Component:**
 * It is a wrapper component that detects stages of press interactions on its defined children.
 * You can create a custom button using Pressable component.
 	* onPressIn		: Is called when a press in activated
     * onLongPress	: Is called when a press is held for over 500ms
     * *onPressOut	: Is called when a press gesture is deactivated
 
-**\<Modal> Component:**
+**8. \<Modal> Component:**
 * It is a screen that overlays the appcontent to provide important info / prompt user for decision.
 * Since they are purposefully interruptive make sure you use them only when necessary.
 
